@@ -3,8 +3,14 @@
   "name": "io.github.srigenmedia/402-in-a-box",
   "title": "402-in-a-Box (Vashishta Metered MCP)",
   "description": "Deterministic Vedic astrology & HTTP 402 metered MCP server with Razorpay INR & PayPal USD billing.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "websiteUrl": "https://vashishta.srigenmedia.com/developers/402",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/srigenmedia/402-in-a-box/main/assets/icon.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ],
   "repository": {
     "url": "https://github.com/srigenmedia/402-in-a-box",
     "source": "github"
