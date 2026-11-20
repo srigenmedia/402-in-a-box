@@ -14,13 +14,9 @@ Turn any Model Context Protocol (`2026-07-28`) server into a pay-per-call metere
 ### 1. Install the Clean-Room SDK
 ```bash
 # TypeScript / Cloudflare Workers
-
-[![mcptry](https://mcptry.com/badge/io.github.srigenmedia/402-in-a-box)](https://mcptry.com/servers/io.github.srigenmedia/402-in-a-box)
 npm install @srigenmedia/mcp-402
 
 # Python / FastAPI / MCP
-
-[![mcptry](https://mcptry.com/badge/io.github.srigenmedia/402-in-a-box)](https://mcptry.com/servers/io.github.srigenmedia/402-in-a-box)
 pip install srigen-mcp-402
 ```
 
