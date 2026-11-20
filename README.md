@@ -1,5 +1,7 @@
 # 402-in-a-Box — HTTP 402 Metering & Compute Packs for MCP
 
+[![mcptry](https://mcptry.com/badge/io.github.srigenmedia/402-in-a-box)](https://mcptry.com/servers/io.github.srigenmedia/402-in-a-box)
+
 Turn any Model Context Protocol (`2026-07-28`) server into a pay-per-call metered API using **HTTP `402 Payment Required`**, atomic reserve-commit-rollback metering, and compliant fiat compute packs (**Razorpay INR 18% GST** & **PayPal USD 0% Export LUT**).
 
 - **Live MCP Endpoint:** `https://mcp.vashishta.srigenmedia.com/mcp`
@@ -12,9 +14,13 @@ Turn any Model Context Protocol (`2026-07-28`) server into a pay-per-call metere
 ### 1. Install the Clean-Room SDK
 ```bash
 # TypeScript / Cloudflare Workers
+
+[![mcptry](https://mcptry.com/badge/io.github.srigenmedia/402-in-a-box)](https://mcptry.com/servers/io.github.srigenmedia/402-in-a-box)
 npm install @srigenmedia/mcp-402
 
 # Python / FastAPI / MCP
+
+[![mcptry](https://mcptry.com/badge/io.github.srigenmedia/402-in-a-box)](https://mcptry.com/servers/io.github.srigenmedia/402-in-a-box)
 pip install srigen-mcp-402
 ```
 
