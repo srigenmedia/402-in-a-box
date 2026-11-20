@@ -1,0 +1,20 @@
+{
+  "name": "@srigenmedia/mcp-402",
+  "version": "0.1.0",
+  "description": "402-in-a-Box metered MCP & A2A compute credit middleware (HTTP 402 + Idempotency + AP2/TAP + optional non-custodial x402 V2).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "license": "Apache-2.0"
+}

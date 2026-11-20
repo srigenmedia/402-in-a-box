@@ -1,0 +1,33 @@
+startCommand:
+  type: http
+  url: https://mcp.vashishta.srigenmedia.com/mcp
+  configSchema:
+    type: object
+    required:
+      - apiKey
+    properties:
+      apiKey:
+        type: string
+        title: SriGenMedia Compute API Key
+        description: Mint a free 25-unit sandbox key at https://vashishta.srigenmedia.com/developers/402
+      idempotencyKey:
+        type: string
+        title: Optional Idempotency-Key
+        description: Client-supplied UUID to guarantee zero duplicate debits on retries (24h window)
+  headers:
+    Authorization: "Bearer {{config.apiKey}}"
+    Idempotency-Key: "{{config.idempotencyKey}}"
+metadata:
+  name: "402-in-a-Box Metered MCP Server"
+  homepage: "https://vashishta.srigenmedia.com/developers/402"
+  agentCard: "https://mcp.vashishta.srigenmedia.com/.well-known/agent.json"
+  assetId: "SRG-COMPUTE-UNIT-V1"
+  sacCode: "998315"
+  x402CryptoEnabled: false
+  tools:
+    - name: ephemeris.compute_varga
+      units: 1
+    - name: muhurta.city_hora_window
+      units: 2
+    - name: jyotisha.niti_synthesis
+      units: 10

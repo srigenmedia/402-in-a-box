@@ -1,0 +1,56 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.srigenmedia/vashishta-mcp-402",
+  "description": "402-in-a-Box metered MCP server: deterministic compute tools billed per call via HTTP 402 (SRG-COMPUTE-UNIT-V1) with Razorpay/PayPal fiat rails.",
+  "version": "0.1.0",
+  "websiteUrl": "https://vashishta.srigenmedia.com/developers/402",
+  "repository": {
+    "url": "https://github.com/srigenmedia/402-in-a-box",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.vashishta.srigenmedia.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer API key minted at https://vashishta.srigenmedia.com/developers/402 (25-unit free sandbox)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "Idempotency-Key",
+          "description": "Optional client UUID for 24h zero-double-debit retry safety",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@srigenmedia/mcp-402",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" }
+    },
+    {
+      "registryType": "pypi",
+      "identifier": "srigen-mcp-402",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" }
+    }
+  ],
+  "meta": {
+    "agentCardUrl": "https://mcp.vashishta.srigenmedia.com/.well-known/agent.json",
+    "assetId": "SRG-COMPUTE-UNIT-V1",
+    "sacCode": "998315",
+    "x402CryptoEnabled": false,
+    "tools": [
+      { "name": "ephemeris.compute_varga", "units": 1 },
+      { "name": "muhurta.city_hora_window", "units": 2 },
+      { "name": "jyotisha.niti_synthesis", "units": 10 }
+    ]
+  }
+}
