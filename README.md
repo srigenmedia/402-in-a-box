@@ -1,6 +1,7 @@
 # 402-in-a-Box — HTTP 402 Metering & Compute Packs for MCP
 
 [![mcptry](https://mcptry.com/badge/io.github.srigenmedia/402-in-a-box)](https://mcptry.com/servers/io.github.srigenmedia/402-in-a-box)
+[![402-in-a-Box (Vashishta Metered MCP) MCP server](https://mcprush.com/badge/402-in-a-box-vashishta-metered-mcp/card.svg)](https://mcprush.com/to/402-in-a-box-vashishta-metered-mcp?ref=badge)
 
 Turn any Model Context Protocol (`2026-07-28`) server into a pay-per-call metered API using **HTTP `402 Payment Required`**, atomic reserve-commit-rollback metering, and compliant fiat compute packs (**Razorpay INR 18% GST** & **PayPal USD 0% Export LUT**).
 
